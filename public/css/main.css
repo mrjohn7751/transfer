@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table-style{
+    margin: 10px 0 !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    height: 70px;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+.nav-bar a img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.title{
+    text-align: center;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+}
+.submit{
+    width: 100% !important;
+    margin: 20px 0;
+}
+@media (min-width: 320px) { 
+    .nav-bar a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+    .nav-bar a img{
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    height:  auto;
+    padding: 5px;
+    box-shadow:  0 0 25px lavender,0 0 55px lavender;
+    border-radius: 10px;
+
+}
+.nav-bar a{
+    text-decoration: none;
+    /* font-size: 22px; */
+    font-weight: 500;
+    color: black;
+}
+.nav-bar a img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.card_description{
+    height: 100%;
+    padding: 20px 0px;
+    margin: auto;
+    margin: 30px 10px !important;
+    background-color: white;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lavender;
+}
+.btn-li{
+    list-style: none;
+}
+.btn-a{
+    text-decoration: none;
+    font-weight: 500 !important;
+    color: white !important;
+    transition: all .2s !important;
+}
+.btn-li:hover .btn-a{
+    transition: all .2s !important;
+    color: #fff !important;
+}
+.img-slide{
+    /* width: 100%; */
+    height: 500px !important;
+    padding: 20px 0;
+    
+}
+.content{
+    font-size: 16px;
+
+}
+.content a {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.btn-footer{
+    text-decoration: none;
+    font-weight: 500 !important;
+    color: green !important;
+    transition: all .2s !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: end !important;
+}
+.btn-footer:hover{
+    color: #fff !important;
+}
+@media (max-width(759p)) {
+    
+}
