@@ -45,74 +45,8 @@
   
   <br>
   
-  <!-- <select class="form-select" name="region" aria-label="Default select example">
-    <option selected disabled>Viloyat</option>
-    <option value="Toshkent viloyati">Toshkent viloyati</option>
-    <option value="Jizzax viloyati">Jizzax viloyati</option>
-    <option value="Sirdaryo viloyati">Sirdaryo viloyati</option>
-    <option value="Samarqand viloyati">Samarqand viloyati</option>
-    <option value="Surxondaryo viloyati">Surxondaryo viloyati</option>
-    <option value="Qashqadaryo viloyati">Qashqadaryo viloyati</option>
-    <option value="Navoiy viloyati">Navoiy viloyati</option>
-    <option value="Buxoro viloyati">Buxoro viloyati</option>
-    <option value="Xorazm viloyati">Xorazm viloyati</option>
-    <option value="Qoraqalpogʻiston Respublikasi">Qoraqalpogʻiston Respublikasi</option>
-    <option value="Namangan viloyati">Namangan viloyati</option>
-    <option value="Fargʻona viloyati">Fargʻona viloyati</option>
-    <option value="Andijon viloyati">Andijon viloyati</option>
-  </select> -->
-      <br>
-        <!-- <div class="mb-3">
-            <label for="location" class="form-label">Yashash manzilingizni kiriting</label>
-            <input type="text" class="form-control" id="location" name="address" placeholder="Sh.Rashidov tumani Bobur MFY Yangiobod ko'ch 74-uy" required>
-        </div> -->
-      <br>
+ 
       <div class="row">
-        <!-- <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-3 ">
-          <select class="form-select" name="facultate" aria-label="Default select example" onchange="updateFacultateId()">
-            <option selected disabled>Fakultet</option>
-            <option value="Transport">Transport</option>
-            <option value="Sanoat texnologiyalari">Sanoat texnologiyalari</option>
-            <option value="Arxitektura va qurilish">Arxitektura va qurilish</option>
-            <option value="Energetika va radioelektronika">Energetika va radioelektronika</option>
-            <option value="Servis">Servis</option>
-            <option value="Qurilish materiallari va kimyoviy texnologiya">Qurilish materiallari va kimyoviy texnologiya</option>
-          </select>
-        </div> -->
-        <!-- <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-3 ">
-          <select class="form-select" name="cafedra" aria-label="Default select example">
-            <option selected disabled>Kafedra</option>
-            <option value='Transport vositalari muhandisligi'>Transport vositalari muhandisligi</option>
-            <option value='Yo‘l muxandisligi'>Yo‘l muxandisligi</option>
-            <option value='Ijtimoiy fanlar'>Ijtimoiy fanlar</option>
-            <option value='Xorijiy tillar'>Xorijiy tillar</option>
-            <option value='Bino va inshoatlar qurilishi'>Bino va inshoatlar qurilishi</option>
-            <option value='Arxitekturaviy loyhalash'>Arxitekturaviy loyhalash</option>
-            <option value='Muhandislik kommunikatsiyalari'>Muhandislik kommunikatsiyalari</option>
-            <option value='Ozbek tili va adabiyoti'>Ozbek tili va adabiyoti</option>
-            <option value='Qurilish materiallari, buyumlari va konstruksiyalari texnologiyasi'>Qurilish materiallari, buyumlari va konstruksiyalari texnologiyasi</option>
-            <option value='Qurilish materialshunosligi'>Qurilish materialshunosligi</option>
-            <option value='Umumiy texnika fanlari'>Umumiy texnika fanlari</option>
-            <option value='Muhandislik va komputer grafikasi'>Muhandislik va komputer grafikasi</option>
-            <option value='Toqimachilik maxsulotlarini qayta ishlash'>Toqimachilik maxsulotlarini qayta ishlash</option>
-            <option value='Tabiiy tolalar va matoga ishlov berish'>Tabiiy tolalar va matoga ishlov berish</option>
-            <option value='Qishloq xojaligi va oziq ovqat maxsulotlarini qayta ishlash'>Qishloq xojaligi va oziq ovqat maxsulotlarini qayta ishlash</option>
-            <option value='Jismoniiy tarbiya'>Jismoniiy tarbiya</option>
-            <option value='Kimiyo texnologiya'>Kimiyo texnologiya</option>
-            <option value='Ekologiya va atrof muhit muxofazasi'>Ekologiya va atrof muhit muxofazasi</option>
-            <option value='Kimyo'>Kimyo</option>
-            <option value='Oliy matematika'>Oliy matematika</option>
-            <option value='Energetika'>Energetika</option>
-            <option value='Elektor texnologiyasi'>Elektor texnologiyasi</option>
-            <option value='Radioelektronika'  >Radioelektronika</option>
-            <option value='Fizika'>Fizika</option>
-            <option value='Ishlab chiqarish jarayonlarini avtomatlashtirish va boshqarish'>Ishlab chiqarish jarayonlarini avtomatlashtirish va boshqarish</option>
-            <option value='Transport logistikasi'>Transport logistikasi</option>
-            <option value='Iqtisodiyot va menejment'>Iqtisodiyot va menejment</option>
-            <option value='Profissional talim'>Profissional talim</option>
-            <option value='Metalogiya va standartlashtrish'>Metalogiya va standartlashtrish</option>
-          </select>
-        </div> -->
         <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-3 ">
           <select class="form-select" name="deriction" aria-label="Default select example">
             <option selected disabled>O'qiyotgan ta'lim yo'alishingiz</option>

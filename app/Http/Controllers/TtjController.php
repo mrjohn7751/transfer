@@ -12,7 +12,7 @@ class TtjController extends Controller
 {
     public function index()
     {
-        $ttjs = ttj::paginate(15);
+        $ttjs = ttj::all(); // Retrieve all items without pagination
         return view('show', compact('ttjs'));
     }
 

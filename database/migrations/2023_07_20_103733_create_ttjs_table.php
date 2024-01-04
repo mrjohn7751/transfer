@@ -28,10 +28,10 @@ class CreateTtjsTable extends Migration
             $table->string('shape');
             $table->string('group');
             $table->integer('course');
-            $table->text('deriction2');
-            $table->string('shape2');
+            $table->text('deriction2')->nullable();
+            $table->string('shape2')->nullable();
             $table->mediumText('details')->nullable();
-            $table->text('doc');
+            $table->text('doc')->nullable();
             $table->integer('check');
             $table->timestamps();
         });

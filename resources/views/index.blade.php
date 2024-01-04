@@ -13,7 +13,7 @@
     </div>
     <div class="container">
       <div class="row card_description mx-0">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+        <!-- <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -56,19 +56,19 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-        </div>
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+        </div> -->
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="content">
                 <h5>Jizzax politexnika instituti O'qishni ko'chirish va tiklash</h5>
                 <p>
                 O‘zbekiston Respublikasi Vazirlar Mahkamasining 2017-yil 20.06 dagi 393-son bilan tasdiqlangan “Oliy ta’lim muassasalari talabalari o‘qishini ko‘chirish, qayta tiklash va o‘qishdan chetlashtirish tartibi to‘g‘risida”gi NIZOM va O‘zbekiston Respublikasi Vazirlar Mahkamasining    2020-yil      31-dekabrdagi 824-son qarori bilan tasdiqlangan “Oliy ta’lim muassasalarida o‘quv jarayoniga kredit-modul tizimini joriy etish tartibi to‘g‘risida” nizomlarga asosan institut talabalar safiga kunduzgi va sirtqi ta’lim shakliga tiklash va ko'chirish
                 <a href="./Turdoshlar JizPI.pdf">Turdosh yo'nalishlar yuklab olish uchun bosing</a>
-                <a href="https://t.me/Perevod20232024">Bizning telegram kanalimiz azo boling </a>
-
                 </p>
-                
+                <a href="https://t.me/Perevod20232024">
+                  <p>Bizning telegram kanalimiz a'zo bo'ling</p>
+                </a>
             </div>
-            <li class="btn-li btn btn-outline-success"><a href="{{ route('ttj.create') }}" class="btn-footer btn-outline-success" target="_blank">Ariza topshirish</a></li>
+            <li class="btn-li btn btn-outline-success "><a href="{{ route('ttj.create') }}" class="btn-footer btn-outline-success">Ariza topshirish</a></li>
         </div>
        </div>
     </div>
