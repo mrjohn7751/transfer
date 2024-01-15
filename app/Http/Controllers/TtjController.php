@@ -12,7 +12,7 @@ class TtjController extends Controller
 {
     public function index()
     {
-        $ttjs = ttj::all(); // Retrieve all items without pagination
+        $ttjs = ttj::all();
         return view('show', compact('ttjs'));
     }
 
@@ -21,7 +21,7 @@ class TtjController extends Controller
         return view('index');
     }
 
-    public function result()
+    public function show()
     {
         return view('result');
     }
@@ -54,7 +54,7 @@ class TtjController extends Controller
             'check' => $request->check ?? 0,
             'doc' => $path,
         ]);
-        return redirect('result');
+        return redirect('ttj/show');
       
     }
   
@@ -62,7 +62,6 @@ class TtjController extends Controller
     {
         $ttj = ttj::findOrFail($id);
 
-        // Ensure the file exists in the storage
         if (Storage::exists($ttj->doc)) {
             $fileContents = Storage::get($ttj->doc);
 
@@ -73,7 +72,6 @@ class TtjController extends Controller
                 'Content-Disposition' => 'attachment; filename="' . basename($ttj->doc) . '"',
             ]);
         } else {
-            // Handle the case when the file does not exist
             return redirect()->back()->with('error', 'File not found.');
         }
     }
