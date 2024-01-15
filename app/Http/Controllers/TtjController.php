@@ -21,6 +21,11 @@ class TtjController extends Controller
         return view('index');
     }
 
+    public function result()
+    {
+        return view('result');
+    }
+
 
     public function create(ttj $ttj)
     {
@@ -31,51 +36,14 @@ class TtjController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
-
-       try{
-        // $rules = [
-        //     'name' => 'required|string|max:255',
-        //     // 'birth_date' => 'required|date',
-        //     'phone_num' => 'required|string|max:20',
-        //     'parent_num' => 'required|string|max:20',
-        //     // 'region' => 'required|string|max:255',
-        //     // 'address' => 'required|string|max:255',
-        //     // 'facultate' => 'required|string|max:255',
-        //     // 'facultate_id' => 'nullable|integer',
-        //     // 'cafedra' => 'required|string|max:255',
-        //     'deriction' => 'required|string|max:255',
-        //     'course' => 'required|string|max:255',
-        //     'group' => 'required|string|max:255',
-        //     'shape' => 'required|string|max:255',
-        //     'deriction2' => 'required|string|max:255',
-        //     'shape2' => 'required|string|max:255',
-        //     'details' => 'nullable|string',
-        //     'check' => 'nullable|boolean',
-        //     'doc' => 'nullable|mimes:pdf,img,jpg,png|max:5240', // Max 5MB file size, allowed file types: pdf, doc, docx
-        // ];
-
-           // Run the validation
-        //    $validator = Validator::make($request->all(), $rules);
-
-           // Check if the validation fails
-        //    if ($validator->fails()) {
-        //        return redirect()->back()->withErrors($validator)->withInput();
-        //    }
-
+      
 
         $path = $request->file('doc')->store('doc-store');
         
         ttj::create([
             'name'=> $request->name,
-            // 'birth_date' => $request->birth_date,
             'phone_num' => $request->phone_num,
             'parent_num' => $request->parent_num,
-            // 'region' => $request->region,
-            // 'address' => $request->address,
-            // 'facultate' => $request->facultate,
-            // 'facultate_id' => $request->facultate_id ?? 0,
-            // 'cafedra' => $request->cafedra,
             'deriction' => $request->deriction,
             'shape' => $request->shape,
             'group' => $request->group,
@@ -86,11 +54,8 @@ class TtjController extends Controller
             'check' => $request->check ?? 0,
             'doc' => $path,
         ]);
-        return redirect('/');
-       }catch(Exception $e)
-       {
-        dd($e);
-       }
+        return redirect('result');
+      
     }
   
     public function downloadFile($id)

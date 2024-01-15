@@ -17,8 +17,8 @@ class CreateTtjsTable extends Migration
             $table->id();
             $table->string('name');
             // $table->string('birth_date')->nullable();
-            $table->integer('phone_num');
-            $table->integer('parent_num');
+            $table->string('phone_num');
+            $table->string('parent_num')->nullable();
             // $table->string('region')->nullable();
             // $table->mediumText('address')->nullable();
             // $table->integer('facultate_id')->nullable();

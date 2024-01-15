@@ -38,7 +38,7 @@
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
               <div class="mb-3">
                 <label for="phone-number2" class="form-label">Qo'shimcha telefon raqamni</label>
-                <input type="number" class="form-control" name="parent_num" id="phone-number2" placeholder="+9981234567 " required>
+                <input type="number" class="form-control" name="parent_num" id="phone-number2" placeholder="+9981234567 ">
               </div>
             </div>
           </div>
@@ -54,7 +54,9 @@
             <option value= 'Buxgalteriya hisobi va audit (tarmoqlar bo‘yicha)'>Buxgalteriya hisobi va audit (tarmoqlar bo‘yicha)</option>
             <option value= 'Avtomobilsozlik va traktorsozlik'>Avtomobilsozlik va traktorsozlik</option>
             <option value='Ekologiya va atrof-muhit muhofazasi (tarmoqlar va sohalar bo‘yicha)'>Ekologiya va atrof-muhit muhofazasi (tarmoqlar va sohalar bo‘yicha)Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha)</option>
-            <option value= ' Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha) '>Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha) </option>
+            <option value='Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha)'>Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha)</option>
+            <option value= 'Professional talim (Iqtisod) '>Professional talim (Iqtisod)</option>
+            <option value= 'Metallurgiya'>Metallurgiya</option>
             <option  value= 'Elektr texnikasi, elektr mexanikasi va elektr texnologiyalari (tarmoqlar bo‘yicha)'>Elektr texnikasi, elektr mexanikasi va elektr texnologiyalari (tarmoqlar bo‘yicha)</option>
             <option value= 'Elektronika va asbobsozlik (tarmoqlar bo‘yicha)'>Elektronika va asbobsozlik (tarmoqlar bo‘yicha)</option>
             <option value= 'Energetika (tarmoqlar bo‘yicha)'>Energetika (tarmoqlar bo‘yicha)</option>
