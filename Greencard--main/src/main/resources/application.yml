@@ -1,0 +1,40 @@
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+  error:
+    include-binding-errors: never
+spring:
+  sql:
+    init:
+      mode: never
+  datasource:
+    url: jdbc:postgresql://dpg-ckeim46npffc73befn2g-a.oregon-postgres.render.com:5432/green_card_g3lr
+    username: green_card_g3lr_user
+    password: W9oTW7vEwuzArdbE7c5EwnuP28maQp0l
+#    url: jdbc:postgresql://localhost:5432/greenCard
+#    username: postgres
+#    password: 12345678
+    driver-class-name: org.postgresql.Driver
+  main:
+    lazy-initialization: false
+    allow-circular-references: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  thymeleaf:
+    mode:
+      HTML
+    cache: false
+  mvc:
+    view:
+      prefix:
+        /public/
+      suffix:
+        .html

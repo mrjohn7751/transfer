@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autumn Leaf Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0eaea;
+    }
+    
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  
+  <script>
+    // Set up the canvas
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    // Create an array of leaf images
+    var leafImages = [
+      "path/to/leaf1.png",
+      "path/to/leaf2.png",
+      "path/to/leaf3.png",
+      "path/to/leaf4.png"
+    ];
+    
+    // Create an array to hold the leaves
+    var leaves = [];
+    
+    // Create a function to generate a random number within a range
+    function random(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    
+    // Create a function to create a new leaf object
+    function createLeaf() {
+      var image = new Image();
+      image.src = leafImages[random(0, leafImages.length - 1)];
+      
+      var leaf = {
+        x: random(0, canvas.width),
+        y: -100,
+        speed: random(2, 5),
+        angle: random(0, 360),
+        spin: random(-0.2, 0.2),
+        image: image
+      };
+      
+      leaves.push(leaf);
+    }
+    
+    // Create a function to update the position of the leaves
+    function update() {
+      // Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Loop through each leaf and update its position
+      for (var i = 0; i < leaves.length; i++) {
+        var leaf = leaves[i];
+        
+        // Calculate the new position of the leaf
+        leaf.y += leaf.speed;
+        leaf.x += Math.sin(leaf.angle * Math.PI / 180) * 5;
+        leaf.angle += leaf.spin;
+        
+        // Draw the leaf on the canvas
+        ctx.save();
+        ctx.translate(leaf.x, leaf.y);
+        ctx.rotate(leaf.angle * Math.PI / 180);
+        ctx.drawImage(leaf.image, -leaf.image.width / 2, -leaf.image.height / 2);
+        ctx.restore();
+        
+        // Remove the leaf from the array if it goes off-screen
+        if (leaf.y > canvas.height + 100) {
+          leaves.splice(i, 1);
+        }
+      }
+      
+      // Generate a new leaf every few frames
+      if (random(0, 10) === 0) {
+        createLeaf();
+      }
+      
+      // Call the update function again on the next frame
+      requestAnimationFrame(update);
+    }
+    
+    // Start the animation loop
+    update();
+  </script>
+</body>
+</html>

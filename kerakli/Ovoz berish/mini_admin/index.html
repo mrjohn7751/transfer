@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+      integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+     
+
+        <!-- Modal -->
+        <div class="modal" id="myModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Royhatdan O'tgazish</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="row needs-validation" novalidate>
+                    <div
+                      class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+                    >
+                      <div class="mb-3">
+                        <label for="firstName" class="form-label">FISH</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Berdiyev Jahongir Abdurashidovich"
+                          id="firstName"
+                          aria-describedby="emailHelp"
+                          name="firstName"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+                    >
+                      <div class="mb-3">
+                        <label for="lastName" class="form-label"
+                          >Nimaga Nomzodligi</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nimaga Nomzodligi"
+                          id="lastName"
+                          aria-describedby="emailHelp"
+                          name="lastName"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+                    >
+                      <div class="mb-3">
+                        <label for="image">Select PNG or JPG file:</label>
+
+                        <input
+                          type="file"
+                          id="image"
+                          accept=".png, .jpg, .jpeg"
+                          name="image"
+                          required
+                        />
+                        <div class="invalid-feedback">Looks good!</div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="saveButton"
+                  onclick="saveData()"
+                >
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered table-dark table-hover table-striped" id="dataTable">
+          <thead>
+            <tr>
+              <th data-label="order" style="width: 50px;">№</th>
+              <th data-label="fish">Fish</th>
+              <th data-label="caption">Nimaga davogarligi</th>
+              <th data-label="jami">Jami ovoz</th>
+              <th data-label="ha">Ha(soni)</th>
+              <th data-label="yoq">Yoq(soni)</th>
+              <th data-label="betaraf">Betaraf(soni)</th>
+              <th data-label="chack" style="width: 30px;">Belgilash</th>
+              <th data-label="action" style="width: 50px;">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <form action="" class="form_control">
+          <div class="bosh">
+            <label for="boshlanish">Boshlanish vaqti</label>
+            <input type="datetime-local" id="#boshlanish">
+          </div>
+          <div class="tugash">
+            <label for="tugash">Tugash vaqti</label>
+            <input type="datetime-local">
+          </div>
+
+
+          <button class="btn btn-outline-primary" type="button">Saqlash</button>
+        </form>
+        
+  </div>
+
+    <script>
+      // Open modal function
+      function openModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+        
+        document.getElementById("image").value = "";
+      }
+
+      // Save data function
+      function saveData() {
+        // Get form field values
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+
+        // Create new row in table
+        var table = document.getElementById("dataTable");
+        var row = table.insertRow(-1);
+
+        // Add data to row cells
+        var orderCell = row.insertCell(0);
+        var firstNameCell = row.insertCell(1);
+        var lastNameCell = row.insertCell(2);
+        var jamiCell = row.insertCell(3)
+        var haCell = row.insertCell(4)
+        var yoqCell = row.insertCell(5)
+        var betarafCell = row.insertCell(6)
+        var chackCell = row.insertCell(7)
+        var deleteCell = row.insertCell(8);
+
+        orderCell.innerHTML = table.rows.length - 1; // Order cell is the current number of rows in the table minus the header row
+        firstNameCell.innerHTML = firstName;
+        lastNameCell.innerHTML = lastName;
+
+
+        // chack input 
+        // var chackbox = document.createElement("chackbox")
+        // checkboxCell.innerHTML = "<input type='checkbox' />";
+        // chackbox.className = "form-chack-input";
+
+
+        // Add delete button to delete cell
+        var deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "Delete";
+        deleteButton.className = "btn btn-outline-danger";
+
+        deleteButton.onclick = function () {
+          table.deleteRow(row.rowIndex);
+          // Reorder the table rows
+          for (var i = 1; i < table.rows.length; i++) {
+            table.rows[i].cells[0].innerHTML = i;
+          }
+        };
+
+        deleteCell.appendChild(deleteButton);
+
+        // Close modal and reset form fields
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+
+        document.getElementById("firstName").value = "";
+        document.getElementById("lastName").value = "";
+      }
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+      integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

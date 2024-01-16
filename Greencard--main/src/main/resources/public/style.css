@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    background-color: rgba(226, 223, 223, 0.849);
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: rgb(250, 248, 248);
+}
+.main-card-2{
+    margin-bottom: 30px;
+}
+.main-card-3{
+    margin-top: 30px;
+}
+.line{
+    /* margin: 5px; */
+    width: 98%;
+    height: 1px;
+    border-radius: 2px;
+    background: #bbbbbb;
+
+}
+.line-1{
+    position: absolute;
+    bottom: -10px;
+}
+
+.nav-main-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /*margin-top: 30px;*/
+    background: #e6e6e670;
+    padding-top: 20px;
+
+}
+.main-box{
+    background: #e6e6e670;
+    padding: 20px;
+}
+.main-box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.main-right{
+    width: 80%;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-box-left{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+}
+.nav-box-right{
+    display: flex;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    line-height: 90px;
+}
+.nav-box-left .p{
+    line-height: 90px;
+    margin-left: 20px;
+}
+.nav-box-left .p h6:first-child{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-top: 10px;
+}
+.nav-box-left .p h6:last-child{
+    color: red;
+    font-size: 18px;
+    margin-top: 5px;
+}
+/* .nav-box-left  */
+.title-name{
+    margin-top: 10px;
+    padding: 9px 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    border-radius: 2px;
+    font-weight: 600;
+    background: #3f91ee;
+}
+
+input{
+    outline: none;
+}
+.name, .last-name{
+    position: relative;
+    height: 80px;
+    width: 500px;
+}
+.data-sity > input{
+    padding: 5px 10px;
+    border: 1px solid #cfcdcd;
+    font-size: 20px;
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 70%;
+    border-radius: 5px;
+}
+.name >.ism,.last-name >.ism{
+    padding: 5px 10px;
+    border: 1px solid #cfcdcd;
+    font-size: 20px;
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 70%;
+    border-radius: 5px;
+}
+.name > span, .last-name > span{
+    position: absolute;
+    left: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.ism::placeholder{
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+/* ======================================================= */
+.group{
+    display: flex;
+    padding-bottom: 20px;
+}
+.group-2{
+    display: block;
+}
+.sex,.data-time{
+    position: relative;
+    height: 80px;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.sex > input[type=radio] {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+    padding: 5px 10px;
+    border: 1px solid #cfcdcd;
+    border-radius: 5px;
+}
+
+.sex > span, .data-time > span {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.sex > label {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 7px;
+}
+.data-time > input{
+    width:20%;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 40px 10px;
+    padding: 5px 10px;
+    border: 1px solid #cfcdcd;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.data-time input::placeholder{
+    padding: 5px;
+}
+
+/* ======================================================= */
+
+.data-country{
+    position: relative;
+    height: 80px;
+    width: 500px;
+    margin-top: 10px;
+
+}
+.data-country select{
+    position: absolute;
+    width: 300px;
+    height: 42px;
+    border: 1px solid #cfcdcd;
+    border-radius: 7px;
+    top: 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 40px;
+    padding: 5px;
+    margin-left: 10px;
+    outline: none;
+}
+.data-country > select::placeholder{
+    margin: 10px;
+    padding: 5px;
+}
+.data-country > span{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.data-sity{
+    position: relative;
+    height: 80px;
+    width: 500px;
+    margin-top: 10px;
+}
+.data-sity > span{
+    position: absolute;
+    left: 15px;
+    top: -4px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.data-sity > input{
+    height: 46px;
+}
+/* ======================================================= */
+
+.title-2{
+    display: flex;
+    justify-content: space-between;
+}
+.title-2 span{
+    width: 500px;
+}
+.modal_group{
+    width: 100% !important;
+}
+.modal_input{
+    width: 97% !important;
+}
+
+.modal-center{
+    padding: 30px;
+    font-size: 18px;
+}
+.input-manzil{
+    width: 97% !important;
+}
+
+/* ======================================================= */
+
+
+
+/* Left  */
+.main-left{
+    width: 20%;
+    background: #a8a6a663;
+    align-items: center !important;
+    padding: 10px 20px;
+}
+.main-left img{
+    width: 180px;
+    border-radius: 5px;
+}
+.title-name-left{
+    padding: 9px 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    border-radius: 2px;
+    font-weight: 600;
+    background: #3f91ee;
+}
+.upload_img {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="file"] {
+    display: none;
+}
+.eslatma{
+    color: red;
+    margin: 10px 20px;
+}
+.footer-line{
+    /* margin: 5px; */
+    width: 98%;
+    height: 1px;
+    border-radius: 2px;
+    background: #bbbbbb;
+    margin: 20px 0;
+
+}
+.btn{
+    box-sizing: border-box;
+}
+.modal-btn{
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    color: #2060b4;
+}
+.container-footer{
+    padding: 0 !important;
+    background-color: #3f91ee;
+}
+
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.footer-brand span{
+    font-size: 24px;
+    box-sizing: border-box;
+}
+.logo-footer{
+    height: 120px;
+    margin: 20px 10px;
+}
+.locate h5{
+    margin-top: 20px;
+}
+.line-locate{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 20%;
+    margin-bottom: 10px;
+}
+.aloqa{
+    margin-bottom: 20px;
+}
+.aloqa h5{
+    margin-top: 20px;
+}
+.tel{
+    margin-right: 10px;
+    color: black;
+}
+.main{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
